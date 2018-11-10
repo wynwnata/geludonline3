@@ -1,8 +1,7 @@
 <?php
 require_once('./line_class.php');
-$channelAccessToken = 'ISI_DISINI'; //Channel access token
-$channelSecret = 'ISI_DISINI';//Channel secret
-
+$channelAccessToken = '7OAXEGKCXcbp2h3CqxMOSZi7dJDcUXwfMSQrIEHwXaIbGQQBxaugsBvshUamKEc/0q4EvJ+uVOKGHnEbspyl4XJXLB06P+2c3U96SFDtRsW54GSm01TYHssubAdfc580hGls9dG6qx7lZ/fUCoFgPAdB04t89/1O/w1cDnyilFU='; //Channel access token
+$channelSecret = '763df8066f26b739477921c706fdc585';//Channel secret
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $replyToken = $client->parseEvents()[0]['replyToken'];
 $message 	= $client->parseEvents()[0]['message'];
